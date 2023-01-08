@@ -1,0 +1,756 @@
+
+/* configuracion general de todo el documento */
+body{
+background-color: #fff;
+margin-top: 100px;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+    overflow-x: hidden !important;
+ 
+
+
+
+}
+
+html{
+  
+        overflow-x: hidden !important ;
+    
+}
+
+
+/* Fondo de color de la barra nav */
+#navegacion {
+
+    display: inline-block;
+    position: fixed;
+    background-color: rgb(0, 87, 185);
+    padding: 20px;
+    width:100%;
+    height: 60px;  
+    margin-top: -100px;
+    z-index: 50;
+
+
+
+}
+
+/*Alignacion de los enlaces en al barra de navegacion */
+
+.nav_items{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+/* Decoracion de los enlaces */
+
+
+a{
+
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    transition: color 0.3s ease;
+    
+}
+
+/* Sombrado de los enlaces */
+
+a:hover {
+
+    color: aqua;
+   
+}
+
+
+/* Posicion de los enlaces dentro de la barra de navegacion */
+
+.nav {
+
+    display: inline-block;
+
+   margin: 0px;
+
+
+
+  
+     
+}
+
+
+img {
+
+    float: left;
+
+ 
+}
+
+
+.redes {
+
+   
+    width: 40px;
+    height: 40px;
+
+}
+
+.imagen{
+
+    width: 50px;
+    height: 50px;
+}
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media (max-width: 900px) {
+
+
+    .nav_items{
+
+        padding: 2px;
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        margin-top: 15px;
+       
+    
+    }
+    
+}
+
+
+@media (max-width: 650px) {
+
+
+    .nav_items{
+
+      
+        padding: 3px;
+        font-size: 10px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        margin-top: 15px;
+      
+       
+    
+    }
+    
+}
+
+
+
+
+
+
+
+/* configuracion de la pagina con la dinamca del cuerpo */
+
+.flex_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    overflow: auto;
+    font-size: 2rem;
+   
+   
+   
+    
+    
+    
+}
+
+.flex_items {
+
+
+   
+    height: 800px;
+    width: 100vw;
+    flex-grow: 1;
+  
+  margin-top: 75px;
+  
+
+  
+    
+    
+}
+
+.flex_items span {
+
+ position: relative;
+ z-index: 4;
+
+
+    
+}
+
+.encima span{
+
+
+    color: rgb(0, 88, 176);
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+    
+   
+    
+}
+
+
+.beach{
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 50px;
+   
+  
+}
+
+
+
+.flex_portada {
+    animation: desaparecer forwards;
+    animation: aparecer 3s forwards ;
+    margin-top: 80px  ;
+    
+}
+
+
+.flex_portada{
+   
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #F4F4F4;
+    border-radius: 50px;
+   
+}
+
+
+
+
+
+@keyframes aparecer {
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+
+    from{
+        opacity: 1;
+    }
+
+    to {
+        opacity:0;
+    }
+}
+
+
+
+
+
+/* modificable para extilo de presentacion de la cabecera */
+
+
+header {
+    
+    width: 100vw;
+    display: inline-block;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 75px;
+  
+    
+    
+}
+.cabecera > img{
+
+
+    height: 400px;
+    width: 100vw;
+    object-fit: cover;
+    text-align: center;
+   
+
+  
+}
+
+.texto_encima{
+   position:absolute ;
+   color: white;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   font-size: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+
+
+/* seccion de home acordion */
+
+.ac--container {
+    width: 535px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
+    border: 7px solid rgba(255,255,255,0.6);
+}
+
+.ac--container figure {
+    position: absolute;
+    top: 0;
+    left: 50px; /* width of visible piece */
+    width: 335px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac--container > figure {
+    position: relative;
+    left: 0 !important;
+}
+
+.ac--container img {
+    display: block;
+    width: 100%;
+}
+
+.ac--container input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; /* just cover visible part */
+    height: 100%;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 100;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ac--container input:checked{
+    width: 5px;
+    left: auto;
+    right: 0px;
+}
+.ac--container input:checked ~ figure {
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    left: 335px;
+}
+
+.ac--container figcaption {
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 73, 81, 0.1);
+    position: absolute;
+    top: 0px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.ac--container figcaption span {
+    position: absolute;
+    top: 40%;
+    margin-top: -30px;
+    right: 20px;
+    left: 20px;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(87, 73, 81, 0.3);
+    line-height: 20px;
+    font-size: 18px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.ac--container input:checked + figcaption,
+.ac--container input:checked:hover + figcaption{
+    background: rgba(87, 73, 81, 0);
+}
+
+.ac--container input:checked + figcaption span {
+    -webkit-transition: all 0.4s ease-in-out 0.5s;
+    -moz-transition: all 0.4s ease-in-out 0.5s;
+    -o-transition: all 0.4s ease-in-out 0.5s;
+    -ms-transition: all 0.4s ease-in-out 0.5s;
+    transition: all 0.4s ease-in-out 0.5s;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+    filter: alpha(opacity=99);
+    opacity: 1;
+
+    top: 50%;
+}
+
+.ac--container #ia-selector-last:checked + figcaption span {
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.ac--container input:hover + figcaption {
+    background: rgba(87, 73, 81, 0.03);
+}
+
+.ac--container input:checked ~ figure input{
+    z-index: 1;
+}
+
+@media screen and (max-width: 720px) {
+    .ac--container {
+        width: 540px;
+    }
+
+    .ac--container figure {
+        left: 40px;
+        width: 260px;
+    }
+
+    .ac--container input {
+        width: 40px;
+    }
+
+    .ac--container input:checked ~ figure {
+        left: 260px;
+    }
+
+    .ac--container figcaption span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .ac--container {
+        width: 320px;
+    }
+
+    .ac--container figure {
+        left: 20px;
+        width: 180px;
+    }
+
+    .ac--container input {
+        width: 20px;
+    }
+
+    .ac--container input:checked ~ figure {
+        left: 180px;
+    }
+
+    .ac--container figcaption span {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 10px;
+        margin-top: -20px;
+    }
+}
+figure { margin: 0; }
+html, input { font-family: sans-serif; }
+
+
+
+
+
+
+/* animacion del header  */
+
+
+ @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
+  
+
+  header {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+}
+
+
+
+/* ajustes de elementos centrales en pagina home */
+
+section > img {
+    width: 100%;
+    margin-top: 20px;
+ 
+  
+}
+
+
+/* implementacion pendiente */
+
+/* 
+.text-header{
+   
+    display: inline-block;
+    font-size: 50px;
+    color: rgb(249, 1, 170);
+
+    z-index: 10;
+
+    
+  
+}
+
+ */
+
+
+
+footer{
+
+  display: inline-block;
+    background-color: black;
+    height: 250px;
+    width: 100%;
+    color: white;
+    margin-top: 75px;
+    
+}
+
+.footer_text{
+
+  margin: 20px;
+  
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+
+
+/* nuevo flex contenedor 3 para pestana de volcanes con su flex items  */
+
+
+
+
+.flex_container3{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    
+ 
+  
+   
+   
+   
+    
+    
+    
+}
+
+/* para imagenes en la pagina de park */
+
+.flex_items3 img  {
+
+    /*oringen,final*/
+    
+    
+    height: 400px;
+    width: 400px;
+    flex-direction:column;
+    margin-top: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px ;
+
+       /*oringen que queremos animar o se puede usar all para animar todas los componentes de la etiqueta ,tiempo que durar, algoritmo de transicion ffinal puede ser ease o linear y hay otros con relacion al ease*/
+    transition: box-shadow 0.3s ease ;
+   
+}
+
+
+.flex_items3 img:hover{
+
+    /* derecha, hacia abajo deplazamiento de sombra, difuminacion, color */
+    box-shadow: 0 0.1rem 0.4rem black;
+}
+
+.flex_items3 iframe  {
+
+
+   
+    height: 500px;
+    width: 500px;
+    flex-direction:column;
+    margin: 2px;  
+    margin-top: 40px;
+    border-radius: 50px;
+    
+   
+  
+
+  
+
+  
+    
+    
+}
+
+aside{
+
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+  
+    
+    
+}
+
+aside > iframe {
+    border-radius: 50px;
+   width: 100%;
+   margin: 20px;
+}
+
+
+
+
+/* este es el titlo que describe los link de la pagina oficial websites  */
+
+.titulolinks {
+
+   text-align: center;
+   font-size: 20px;
+   margin-top: 40px;
+   padding: 20px;
+}
+
+
+
+
+/* modificando la adpatacion a diferentes resoluciones en la pagina de surcity */
+
+@media (max-width: 1700px ){
+
+   
+
+
+
+ .flex_items img{
+
+    height: 300px;
+    width: 300px;
+ }
+}
+
+
+@media (max-width: 900px ){
+
+   
+
+
+
+    .flex_items img{
+   
+       height: 200px;
+       width: 200px;
+    }
+
+    .encima span{
+
+        font-size: 12px;
+        color: blueviolet;
+    }
+   }
+   
+
+
+
+   /* arreglando margen de los videos en mobiles pequeños de la pagina volcanes */
+
+
+
+
+@media (max-width: 700px ){
+
+   
+
+    .container31 iframe {
+
+      width: 450px;
+      height: 450px;
+      
+      border-radius: 50px;
+    
+}
+
+
+  
+   }
+   
+
+
